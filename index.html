@@ -7,6 +7,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
     <script>
+      // Note: The Tailwind CSS CDN is used here for rapid prototyping in this browser-based environment.
+      // In a production build environment, we would use the PostCSS plugin as the warning suggests.
       tailwind.config = {
         theme: {
           extend: {
@@ -93,5 +95,6 @@
 </head>
   <body class="bg-brand-light text-brand-dark antialiased">
     <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
   </body>
 </html>
